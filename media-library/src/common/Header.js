@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link, IndexLink } from 'react-router';
+import Switch from '../containers/toggleSwitch';
 
 const Header = () => (
-  <div className="text-center">
-    <nav className="navbar navbar-default">
-      <IndexLink to="/" activeClassName="active">Home</IndexLink>
-      {" | "}
-      <Link to="library" activeClassName="active">Library</Link>
-    </nav>
-  </div>
+    <div className="text-center">
+        <nav className="navbar navbar-default">
+            <h2 className="active">Donald Trump</h2>
+            <Switch isChecked={ false } />
+            <h2 className="active">Hillary Clinton</h2>
+        </nav>
+    </div>
 );
 
 export default Header;
