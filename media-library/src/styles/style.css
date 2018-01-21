@@ -119,8 +119,16 @@ input[type="checkbox"].bigswitch.switch + div > div {
 	margin-top: 1px;
 }
 
+h2 {
+    display: inline-block;
+}
 
 input[type="checkbox"].switch:checked + div > div {
 	-webkit-transform: translate3d(23px, 0, 0);
 	transform: translate3d(23px, 0, 0);
+}
+
+.container-fluid .container-fluid div {
+    width: 50%;
+    margin: 0 auto;
 }
